@@ -1,7 +1,5 @@
 # EUXLab Skills
 
-[![skills.sh](https://skills.sh/b/roxanneallard/euxlab-skills)](https://skills.sh/roxanneallard/euxlab-skills)
-
 Agent skills for enterprise UX research and design. A loop with shared state, not a folder of prompts.
 
 **Every output is the next input.** Every skill reads a file, does one thing, and writes the next file. That file is the contract with the next step. The skills work in Claude Code, Codex, and any agent that reads the Agent Skills format.
