@@ -16,18 +16,18 @@
     "design",
     "personas",
     "jobs-to-be-done",
-    "design-review"
+    "euxlab-design-review"
   ],
   "skills": [
-    "./skills/loop/setup-euxlab-skills",
-    "./skills/loop/grill-the-ask",
-    "./skills/loop/create-personas-and-job-stories",
-    "./skills/loop/synthesize",
-    "./skills/loop/design-brief",
-    "./skills/loop/design-review",
-    "./skills/reference/grilling",
-    "./skills/reference/evidence-standards",
-    "./skills/reference/enterprise-ux-stance",
-    "./skills/reference/outcome-vocabulary"
+    "./skills/loop/euxlab-setup",
+    "./skills/loop/euxlab-grill-the-ask",
+    "./skills/loop/euxlab-create-personas-and-job-stories",
+    "./skills/loop/euxlab-synthesize",
+    "./skills/loop/euxlab-design-brief",
+    "./skills/loop/euxlab-design-review",
+    "./skills/reference/euxlab-grilling",
+    "./skills/reference/euxlab-evidence-standards",
+    "./skills/reference/euxlab-enterprise-ux-stance",
+    "./skills/reference/euxlab-outcome-vocabulary"
   ]
 }

@@ -3,7 +3,7 @@
 **Concept document** · Roxanne Allard · August 2026
 A skill suite and agentic loop for Enterprise UX work, modeled on the quality bar of Matt Pocock's `mattpocock/skills` and grounded in fifteen years of enterprise practice.
 
-> **Status note.** This is the design document, written before v0.1 shipped. Some names changed on the way: `/to-hills` became `/design-brief`, Hills became requirements with an observable, and `/grill-the-ask` now writes an interview guide. The [README](../README.md) describes what is built.
+> **Status note.** This is the design document, written before v0.1 shipped. Some names changed on the way: `/to-hills` became `/euxlab-design-brief`, Hills became requirements with an observable, and `/euxlab-grill-the-ask` now writes an interview guide. The [README](../README.md) describes what is built.
 
 ---
 
@@ -13,7 +13,7 @@ Research across aihero.dev/skills, the `mattpocock/skills` repo (25 skills, MIT,
 
 1. **Grouped by when you reach for them, not by topic.** Six groups: Getting Started, The Main Flow, Shaping, Upkeep, Productivity, Reference. The taxonomy answers "what situation am I in?", never "what discipline is this?".
 2. **A spine where each output is the next input.** The main flow (grill → spec → tickets → implement → review) is a compounding chain. Tuning one step improves the whole workflow. Skills that don't feed the spine are explicitly labeled on-ramps, detours, or standalone.
-3. **One primitive, many wrappers.** `/grilling` (interview in rounds; the frontier of askable questions; facts are the agent's job, decisions are the human's) is a single source of truth. `/grill-me`, `/grill-with-docs`, `/triage`, and `/wayfinder` all run it internally rather than restating it.
+3. **One primitive, many wrappers.** `/euxlab-grilling` (interview in rounds; the frontier of askable questions; facts are the agent's job, decisions are the human's) is a single source of truth. `/grill-me`, `/grill-with-docs`, `/triage`, and `/wayfinder` all run it internally rather than restating it.
 4. **A reference vocabulary layer underneath.** `/codebase-design`, `/domain-modeling`, and `/tdd` are model-invoked references other skills cite. Vocabulary lives in exactly one place.
 5. **Verification before construction.** TDD's red-before-green: write the checkable success condition first, at pre-agreed seams, one vertical slice at a time. His anti-pattern list (tautological tests, implementation-coupled tests, horizontal slicing) is what keeps agent output honest.
 6. **Two-axis review, never merged.** `/code-review` runs Standards and Spec as parallel sub-agents and reports them side by side, because a change can pass one axis and fail the other. Standards always carry a fixed "smell baseline" (Fowler smells) applied as labeled judgment calls that documented repo standards can override.
@@ -36,7 +36,7 @@ The suite is not "Matt's skills with UX words swapped in". It maps the *roles* h
 | The seam | Public interface under test | Touchpoint / workflow step where the design change lands and gets validated |
 | Implementation | Code | Design artifacts: maps, wireframes, prototypes |
 | Green | Test passes | Sponsor users complete the job at the Wow bar (usability test, metric) |
-| The refactor/review stage | `/code-review` (Standards + Spec) | `/design-review` (Standards + Evidence) |
+| The refactor/review stage | `/code-review` (Standards + Spec) | `/euxlab-design-review` (Standards + Evidence) |
 | Smell baseline | Fowler's code smells | The Enterprise UX smell baseline, distilled from fifteen years of enterprise engagements (section 6) |
 | Glossary | `CONTEXT.md` via `/domain-modeling` | `GLOSSARY.md` per engagement; enterprise domain language is half the job |
 | ADRs | Architecture Decision Records | Design Rationale Records (DRRs), per Brooks: capture the whys while they're cheap |
@@ -56,19 +56,19 @@ Repo shape mirrors Matt's exactly: one folder per skill, `SKILL.md` inside, MIT,
 **01 Getting Started**
 | Skill | One line |
 |---|---|
-| `/setup-euxlab-skills` | Configure one engagement so the other skills know how it works. |
+| `/euxlab-setup` | Configure one engagement so the other skills know how it works. |
 | `/ask-euxlab` | Router: which skill fits the situation you're in. |
 
 **02 The Main Flow** (brief → validated handoff, in order)
 | Skill | One line |
 |---|---|
-| `/grill-the-ask` | Get interviewed about a stakeholder ask; record assumptions and glossary terms as you go. |
+| `/euxlab-grill-the-ask` | Get interviewed about a stakeholder ask; record assumptions and glossary terms as you go. |
 | `/to-research-plan` | Turn graded assumptions into a plan: hypotheses, methods, sample, guides. |
-| `/create-personas-and-job-stories` | Read one transcript into a professional persona and solution-free job stories, every trait cited. |
-| `/synthesize` | Turn raw research data into cited, coded insights. |
+| `/euxlab-create-personas-and-job-stories` | Read one transcript into a professional persona and solution-free job stories, every trait cited. |
+| `/euxlab-synthesize` | Turn raw research data into cited, coded insights. |
 | `/to-hills` | Turn insights into Hills and Desired Outcome Statements: the checkable bar, written before design. |
 | `/brief-design-agent` | Turn one Hill into a self-contained brief a design agent can execute cold. |
-| `/design-review` | Review artifacts against Standards and Evidence, in parallel, side by side. |
+| `/euxlab-design-review` | Review artifacts against Standards and Evidence, in parallel, side by side. |
 | `/playback` | Story-driven alignment: present, capture decisions as DRRs, close the loop. |
 
 **03 Shaping** (explore an open question; the answer feeds the flow)
@@ -97,11 +97,11 @@ Repo shape mirrors Matt's exactly: one folder per skill, `SKILL.md` inside, MIT,
 **06 Reference** (the vocabulary layer other skills invoke or cite)
 | Skill | One line |
 |---|---|
-| `/grilling` | The interview primitive: rounds, the frontier, facts vs decisions. Mechanics from Matt's, rewritten in the house voice. |
-| `/evidence-standards` | What counts as good evidence; the research anti-patterns. |
-| `/enterprise-ux-stance` | The positions baseline: the design smells and their fixes (section 6). |
+| `/euxlab-grilling` | The interview primitive: rounds, the frontier, facts vs decisions. Mechanics from Matt's, rewritten in the house voice. |
+| `/euxlab-evidence-standards` | What counts as good evidence; the research anti-patterns. |
+| `/euxlab-enterprise-ux-stance` | The positions baseline: the design smells and their fixes (section 6). |
 | `/mapping-vocabulary` | Kalbach's alignment-diagram language: map types, touchpoints, front/back stage. |
-| `/outcome-vocabulary` | JTBD/ODI language: job map, outcome statement format, opportunity algorithm. |
+| `/euxlab-outcome-vocabulary` | JTBD/ODI language: job map, outcome statement format, opportunity algorithm. |
 | `/metrics-vocabulary` | Tullis & Albert: performance, issue-based, self-reported metrics; SUS; severity grading. |
 | `/design-rationale` | The DRR format and when a decision earns one. |
 
@@ -113,8 +113,8 @@ Repo shape mirrors Matt's exactly: one folder per skill, `SKILL.md` inside, MIT,
 
 Each skill below states its input, output, and completion criterion. Criteria follow Matt's rule: checkable and demanding, never "understanding reached".
 
-### `/grill-the-ask`
-A stakeholder ask has arrived ("we need a new dashboard", "make the portal easier"). Runs `/grilling` against it, plus two side effects per round: every fuzzy or overloaded term goes to `GLOSSARY.md` (an "account" doing three jobs is as fatal in a tax portal as in a codebase), and every claim the stakeholder makes lands in the **assumption register**, graded by evidence strength.
+### `/euxlab-grill-the-ask`
+A stakeholder ask has arrived ("we need a new dashboard", "make the portal easier"). Runs `/euxlab-grilling` against it, plus two side effects per round: every fuzzy or overloaded term goes to `GLOSSARY.md` (an "account" doing three jobs is as fatal in a tax portal as in a codebase), and every claim the stakeholder makes lands in the **assumption register**, graded by evidence strength.
 **Output:** sharpened brief + graded assumption register + updated glossary.
 **Completion criterion:** the question frontier is empty and every assumption in the register carries a grade and a proposed test. Do not proceed to research on an ungraded register.
 
@@ -122,8 +122,8 @@ A stakeholder ask has arrived ("we need a new dashboard", "make the portal easie
 No interview; pure synthesis of the grilled brief. Selects methods by matching each weak assumption to the question it really is, using Sharon's question→technique mapping (want it? → demand validation; can they use it? → usability test; what do they do? → observation over opinion) and Leavy's sampling vocabulary to size and justify the sample. Writes recruitment criteria, discussion guides, and the consent/GDPR posture from the engagement config.
 **Completion criterion:** every weak-graded assumption maps to at least one method, and no method appears without an assumption it tests. Behavior methods outrank attitude methods wherever the assumption is about behavior.
 
-### `/create-personas-and-job-stories`
-The first pass over fieldwork, one transcript at a time. Input is an uploaded or recorded transcript in `research/raw/` plus the research plan that produced it. Output is one professional persona file and its job stories in `research/personas/`. This runs *before* `/synthesize` on purpose: this is the per-transcript read, `/synthesize` is the cross-transcript read, and personas written here are provisional until synthesis reconciles them.
+### `/euxlab-create-personas-and-job-stories`
+The first pass over fieldwork, one transcript at a time. Input is an uploaded or recorded transcript in `research/raw/` plus the research plan that produced it. Output is one professional persona file and its job stories in `research/personas/`. This runs *before* `/euxlab-synthesize` on purpose: this is the per-transcript read, `/euxlab-synthesize` is the cross-transcript read, and personas written here are provisional until synthesis reconciles them.
 
 **Professional personas, not consumer personas.** No age, no stock photo, no hobbies, no "Sarah loves yoga". An enterprise persona is a role under constraint, and the fields are the ones that change a design decision:
 
@@ -140,15 +140,15 @@ The first pass over fieldwork, one transcript at a time. Input is an uploaded or
 
 Every field carries a citation: participant ID plus transcript line range. An uncited field is deleted, not guessed. Fields the transcript never touched are written as `not covered`, which is what makes the next research plan sharper.
 
-**Job stories over user stories.** Strict format, per `/outcome-vocabulary`: *When [situation], I want to [motivation], so I can [expected outcome].* Situation first, because in enterprise the trigger carries the constraint. No persona name in the story, no solution noun in the motivation ("when I want to click export" is a design decision wearing a story's clothes), and each story anchored to a quoted moment of real struggle, not a stated preference. Job stories here are the qualitative layer; the strict Ulwick outcome statements come later in `/to-hills`.
+**Job stories over user stories.** Strict format, per `/euxlab-outcome-vocabulary`: *When [situation], I want to [motivation], so I can [expected outcome].* Situation first, because in enterprise the trigger carries the constraint. No persona name in the story, no solution noun in the motivation ("when I want to click export" is a design decision wearing a story's clothes), and each story anchored to a quoted moment of real struggle, not a stated preference. Job stories here are the qualitative layer; the strict Ulwick outcome statements come later in `/to-hills`.
 
 Anti-patterns this skill refuses: one persona per job title, two roles merged because they share a screen, a trait carried over from a previous engagement, and any story whose expected outcome is a feature.
 
 Redaction runs on the way out, per the consent guardrail: participant IDs only, employer and team names generalized, quotes scrubbed of identifying detail. The transcript stays in `research/raw/` and stays immutable.
 
-**Completion criterion:** every persona field carries a participant ID and a line range or the literal `not covered`; every job story is in strict format, names no solution, and cites the struggle moment it came from; no persona merges participants with different decision authority; and a persona built from a single transcript is labeled `n=1, provisional` until `/synthesize` reconciles it. Zero uncited traits, or the file does not ship.
+**Completion criterion:** every persona field carries a participant ID and a line range or the literal `not covered`; every job story is in strict format, names no solution, and cites the struggle moment it came from; no persona merges participants with different decision authority; and a persona built from a single transcript is labeled `n=1, provisional` until `/euxlab-synthesize` reconciles it. Zero uncited traits, or the file does not ship.
 
-### `/synthesize`
+### `/euxlab-synthesize`
 The cross-transcript pass, running on the provisional personas and the raw set together. It adds an evidence chain of custody. Raw data in `research/raw/` is immutable (the immutability rule). Every insight gets an ID and cites the raw evidence it came from, the way a footnote cites its source. Contradictions are never silently overwritten. Flag each one with a contradiction callout naming both sources.
 **Completion criterion:** every insight cites at least two evidence items from at least two participants, or is explicitly marked `n=1, provisional`. No insight without a citation trail back to raw. Every provisional persona is either promoted, merged with a reason, or retired here; none stay provisional past this point.
 
@@ -157,7 +157,7 @@ The red test of the loop. Converts insights into Hills (Who / What / Wow) and, w
 **Completion criterion:** every Hill's Wow is measurable (a number, a time, an observable behavior), every Hill traces to cited insights, and the stakeholder has confirmed the set. A Hill whose Wow can't be checked is sent back, not carried forward.
 
 ### `/brief-design-agent`
-Takes one Hill and writes the brief that a design agent executes: Figma via MCP, a code-prototype agent (Cursor, v0, Lovable, Figma Make), or an image tool. One Hill per brief, vertical slice, never a batch. The design work itself happens in the agent; this skill's product is the instruction set and the bar it gets graded against. Consults `/mapping-vocabulary` when the artifact is a map, `/enterprise-ux-stance` always, and the engagement's design system config (NL Design System, a client system, or a vendor system) as a hard constraint, per the Constraint-Led Innovation position. When a question can't be settled on canvas, detour through `/prototype` bridged by `/handoff`, exactly like Matt's step-2 branch.
+Takes one Hill and writes the brief that a design agent executes: Figma via MCP, a code-prototype agent (Cursor, v0, Lovable, Figma Make), or an image tool. One Hill per brief, vertical slice, never a batch. The design work itself happens in the agent; this skill's product is the instruction set and the bar it gets graded against. Consults `/mapping-vocabulary` when the artifact is a map, `/euxlab-enterprise-ux-stance` always, and the engagement's design system config (NL Design System, a client system, or a vendor system) as a hard constraint, per the Constraint-Led Innovation position. When a question can't be settled on canvas, detour through `/prototype` bridged by `/handoff`, exactly like Matt's step-2 branch.
 
 The brief is written for a model with no access to the engagement workspace, so it carries everything needed and nothing else:
 
@@ -171,9 +171,9 @@ The brief is written for a model with no access to the engagement workspace, so 
 
 Redaction runs on the way out, per the consent guardrail: participant IDs only, no names, no employer, no quote carrying identifying detail. A design agent is an external service.
 
-**Completion criterion:** the brief passes the cold-read test. A fresh agent with no repo access produces an artifact gradeable against the Wow without asking a clarifying question. Every screen traces to a cited insight, every constraint is a literal, and the out-of-scope list is non-empty. What comes back goes straight to `/design-review`; a failure returns as a revised brief, never as chat.
+**Completion criterion:** the brief passes the cold-read test. A fresh agent with no repo access produces an artifact gradeable against the Wow without asking a clarifying question. Every screen traces to a cited insight, every constraint is a literal, and the out-of-scope list is non-empty. What comes back goes straight to `/euxlab-design-review`; a failure returns as a revised brief, never as chat.
 
-### `/design-review`
+### `/euxlab-design-review`
 Two parallel sub-agents, reported side by side, never merged or reranked:
 - **Standards axis:** heuristics, WCAG 2.1 AA, the engagement's design system rules, plus the Enterprise UX smell baseline (section 6) as labeled judgment calls. Documented engagement standards override the baseline.
 - **Evidence axis:** does each screen serve a Hill? Quote the Hill for every finding. Flag scope creep (design nobody's evidence asked for) and Hills that look served but where the artifact misses the Wow.
@@ -184,7 +184,7 @@ Two parallel sub-agents, reported side by side, never merged or reranked:
 The alignment ritual and the loop's close. Builds the story-driven presentation, runs the session, and captures what was decided as DRRs, because per Brooks, design rationale evaporates within a week if nobody's job is to write it down. Decisions that change the Hills reopen `/to-hills`; decisions that green-light build produce the engineering handoff spec.
 **Completion criterion:** every decision made in the room exists as a DRR with its why, and every open question left the room owned by a named person with a date.
 
-**Context hygiene rule for the spine:** keep `/grill-the-ask` through `/to-hills` in one unbroken window, so the plan, the synthesis, and the Hills build on the same thinking. Each transcript gets its own window for `/create-personas-and-job-stories`, because a full transcript eats the context the spine needs, and the persona file is what carries forward. Each `/brief-design-agent` per Hill starts fresh; the Hill file is self-contained, so the previous session's context is disposable. `/playback` is a phase boundary: compact after it, never through it.
+**Context hygiene rule for the spine:** keep `/euxlab-grill-the-ask` through `/to-hills` in one unbroken window, so the plan, the synthesis, and the Hills build on the same thinking. Each transcript gets its own window for `/euxlab-create-personas-and-job-stories`, because a full transcript eats the context the spine needs, and the persona file is what carries forward. Each `/brief-design-agent` per Hill starts fresh; the Hill file is self-contained, so the previous session's context is disposable. `/playback` is a phase boundary: compact after it, never through it.
 
 ---
 
@@ -192,7 +192,7 @@ The alignment ritual and the loop's close. Builds the story-driven presentation,
 
 **`/triage-signals`** is the engagement's front door for work you didn't create. Category roles: `pain`, `request`, `insight`, `praise`. State roles: `needs-triage` → `needs-evidence` (the UX-specific state: a claim that must be validated before it earns design effort) → `ready-for-design` / `ready-for-human` / `wontfix`. A shadow-IT sighting (someone's coping spreadsheet) enters as `insight` and is treated per the enterprise stance: design feedback, never a compliance failure. Every triage note carries the AI-generated disclaimer, verbatim from Matt's rule.
 
-**`/workflow-audit`** is the analog of `/improve-codebase-architecture`: run it in a spare moment, get a visual report of friction candidates ranked by the six-step workflow-mapping method, and picking one *generates an idea* that enters the main flow at `/grill-the-ask`, usually via `/roi-case` first, because in an enterprise nothing enters the roadmap without a number attached.
+**`/workflow-audit`** is the analog of `/improve-codebase-architecture`: run it in a spare moment, get a visual report of friction candidates ranked by the six-step workflow-mapping method, and picking one *generates an idea* that enters the main flow at `/euxlab-grill-the-ask`, usually via `/roi-case` first, because in an enterprise nothing enters the roadmap without a number attached.
 
 **`/discovery-map`** is `/wayfinder` with the destination types renamed: a scoped discovery brief, a validated problem statement, a go/no-go. Decision tickets, decisions not deliverables, refer by name, the map is an index not a store. When the fog clears it hands off to `/to-research-plan` or `/to-hills`; it never designs.
 
@@ -214,10 +214,10 @@ Matt's Standards axis always carries Fowler's smells, "a fixed set that applies 
 - **Legacy contempt:** treating the 20-year-old system and its experts as the obstacle. → Design with them; they hold the domain model.
 - **Unpriced friction:** a recommendation with no time/money/risk translation attached. → Run `/roi-case`; spreadsheet thinkers fund numbers.
 - **Requirements by union:** a scope that is the unweighted sum of every stakeholder's wish list (Brooks's requirements bloat). → Return to the Hills; a chief designer prunes.
-- **Solution-shaped research:** evidence gathered to confirm a design already chosen. → Send it to `/evidence-standards`; grade it tainted.
+- **Solution-shaped research:** evidence gathered to confirm a design already chosen. → Send it to `/euxlab-evidence-standards`; grade it tainted.
 - **Chartjunk dashboard:** decoration, low data density, no at-a-glance answer (Few + Tufte). → Data-ink ratio up; bullet graphs and sparklines; one screen, one glance.
 
-And in `/evidence-standards`, the research anti-patterns, mirroring the TDD ones:
+And in `/euxlab-evidence-standards`, the research anti-patterns, mirroring the TDD ones:
 - **Tautological research** (the leading question): the method can only produce the answer you fed it. The tell: no possible participant behavior would have changed the conclusion.
 - **Attitude-coupled evidence:** an opinion standing in for a behavior ("would you use this?"). → Observe or instrument the behavior itself.
 - **Horizontal research:** all the studies first, then all the design. → Vertical slices: one hypothesis, one test, one design move, each responding to what the last cycle taught.
@@ -226,13 +226,13 @@ And in `/evidence-standards`, the research anti-patterns, mirroring the TDD ones
 
 ## 7. State, setup, and the compounding loop
 
-`/setup-euxlab-skills` runs once per engagement, in Matt's explore → present → confirm → write shape, and scaffolds:
+`/euxlab-setup` runs once per engagement, in Matt's explore → present → confirm → write shape, and scaffolds:
 
 ```
 <engagement>/
 ├── docs/agents/engagement.md   # client, domain, design system, tracker,
 │                               # consent posture, stakeholder map, label overrides
-├── GLOSSARY.md                 # the CONTEXT.md analog; /grill-the-ask feeds it
+├── GLOSSARY.md                 # the CONTEXT.md analog; /euxlab-grill-the-ask feeds it
 ├── docs/drr/                   # Design Rationale Records
 ├── research/
 │   ├── raw/                    # immutable, consent-checked; assets included
@@ -272,9 +272,9 @@ Five releases, each one usable on a real engagement the day it ships. The orderi
 
 #### v0.1 · MVP: the loop that compounds (10 skills)
 
-**Ships:** `/setup-euxlab-skills`, `/grilling` (mechanics from Matt's, rewritten in the house voice), `/grill-the-ask`, `/create-personas-and-job-stories`, `/synthesize`, `/to-hills`, `/design-review`, `/evidence-standards`, `/enterprise-ux-stance`, `/outcome-vocabulary`.
+**Ships:** `/euxlab-setup`, `/euxlab-grilling` (mechanics from Matt's, rewritten in the house voice), `/euxlab-grill-the-ask`, `/euxlab-create-personas-and-job-stories`, `/euxlab-synthesize`, `/to-hills`, `/euxlab-design-review`, `/euxlab-evidence-standards`, `/euxlab-enterprise-ux-stance`, `/euxlab-outcome-vocabulary`.
 
-**Why these:** this is the shortest path from a vague stakeholder ask to a checkable bar and a graded artifact. `/setup-euxlab-skills` comes first because every other skill reads the engagement config and the folder scaffold; without it the rest are prompts, not a system. `/outcome-vocabulary` is the one reference that earns its place immediately, because two skills consume the job-story and outcome formats on day one.
+**Why these:** this is the shortest path from a vague stakeholder ask to a checkable bar and a graded artifact. `/euxlab-setup` comes first because every other skill reads the engagement config and the folder scaffold; without it the rest are prompts, not a system. `/euxlab-outcome-vocabulary` is the one reference that earns its place immediately, because two skills consume the job-story and outcome formats on day one.
 
 **Deliberately absent:** research planning (v0.1 assumes transcripts already exist, which on a live engagement they usually do), the design handoff, the alignment ritual, and the router. A router over ten skills is dead weight; the human still knows what they want.
 
@@ -300,7 +300,7 @@ Five releases, each one usable on a real engagement the day it ships. The orderi
 
 **Why these:** the first two phases handle work you were given. This one handles work you find: raw signals get a state machine, the repo gets a health check, friction gets surfaced by method rather than by hunch, and the chosen friction gets a number attached, because in an enterprise nothing enters the roadmap unpriced. `/desk-research` lands here because `/roi-case` benchmarks need cited outside sources. `/metrics-vocabulary` extracts here on its second consumer, `/insight-lint` and `/roi-case`.
 
-**Exit criterion:** a piece of work that nobody assigned enters at `/triage-signals` or `/workflow-audit`, carries an ROI number, and reaches `/grill-the-ask` on its own. `/insight-lint` runs clean on the engagement repo.
+**Exit criterion:** a piece of work that nobody assigned enters at `/triage-signals` or `/workflow-audit`, carries an ROI number, and reaches `/euxlab-grill-the-ask` on its own. `/insight-lint` runs clean on the engagement repo.
 
 ---
 

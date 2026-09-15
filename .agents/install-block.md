@@ -34,7 +34,7 @@ The plugin is Claude Code only. Everywhere else, [skills.sh](https://skills.sh) 
 npx skills@latest add roxanneallard/euxlab-skills
 ```
 
-Pick the skills you want, and which coding agents to install them on. **Make sure `setup-euxlab-skills` is one of them.** The loop skills load the four reference skills, so take those too.
+Pick the skills you want, and which coding agents to install them on. **Make sure `euxlab-setup` is one of them.** The loop skills load the four reference skills, so take those too.
 
 </canonical-block>
 

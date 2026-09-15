@@ -11,4 +11,4 @@ The Claude desktop and web apps have no slash commands, so `scripts/package-skil
 
 ## Dependencies between them
 
-Dependencies are written as `/skill`-style prose ("Load `/evidence-standards` for grading"), never as `../other-skill/FILE.md` links. Shared material lives inside the skill that owns it. A user-invoked skill may load model-invoked skills, but never another user-invoked one.
+Dependencies are written as `/skill`-style prose ("Load `/euxlab-evidence-standards` for grading"), never as `../other-skill/FILE.md` links. Shared material lives inside the skill that owns it. A user-invoked skill may load model-invoked skills, but never another user-invoked one.

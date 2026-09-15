@@ -29,7 +29,7 @@ One or two plain paragraphs. Lead with the skill's one-sentence job, then state 
 
 ## Prerequisites
 
-Only when the skill needs something in place: the engagement folder from `/setup-euxlab-skills`, and the files it reads. Say what it writes and where. Reference skills are stateless and drop this section.
+Only when the skill needs something in place: the engagement folder from `/euxlab-setup`, and the files it reads. Say what it writes and where. Reference skills are stateless and drop this section.
 
 ## <free-form middle>
 
