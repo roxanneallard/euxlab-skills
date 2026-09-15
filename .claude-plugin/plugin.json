@@ -1,6 +1,6 @@
 {
   "name": "euxlab-skills",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Agent skills for enterprise UX research and design. A flow with shared state: stakeholder ask to interview guide, transcripts to personas, insights, design brief, and a two-axis design review.",
   "author": {
     "name": "Roxanne Allard",
