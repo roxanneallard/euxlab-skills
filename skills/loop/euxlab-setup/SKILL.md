@@ -59,7 +59,7 @@ Who asks for the work, who signs off, and who is measured on the outcome. Names 
 **Section E - Archive target.**
 Where this engagement goes at close. Default to `none`, meaning it stays where it is, because a folder of markdown needs nowhere else to be. Offer a path or a shared drive. This is the only thing that leaves the engagement folder, so the consent posture in section C governs it.
 
-**Section F - Signal tracker.** Only ask if `/triage-signals` is installed (v0.3). Otherwise skip silently.
+**Section F - Signal tracker.** Only ask if `/triage-signals` is installed (planned for phase 3). Otherwise skip silently.
 
 ### 3. Confirm
 
@@ -75,7 +75,7 @@ Create the scaffold:
 │   ├── agents/engagement.md   # everything from sections A-F
 │   ├── interview-guide.md     # /euxlab-grill-the-ask writes this
 │   ├── design-brief.md        # /euxlab-design-brief writes this
-│   └── drr/                   # Design Rationale Records (v0.2 fills this)
+│   └── drr/                   # Design Rationale Records (phase 2 fills this)
 ├── GLOSSARY.md                # /euxlab-grill-the-ask and the persona skill feed this
 ├── research/
 │   ├── raw/                   # immutable, consent-checked; assets included

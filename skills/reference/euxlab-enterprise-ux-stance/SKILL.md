@@ -32,7 +32,7 @@ A fixed set of smells that applies even when an engagement documents no standard
 → Design with them. They hold the domain model, and the old system encodes two decades of edge cases nobody wrote down.
 
 **7. Unpriced friction.** A recommendation with no time, money, or risk translation attached.
-→ Attach a number. Spreadsheet thinkers fund numbers, not adjectives. (`/roi-case` from v0.3 does this properly; until then, do the arithmetic inline.)
+→ Attach a number. Spreadsheet thinkers fund numbers, not adjectives. (`/roi-case`, planned for phase 3, does this properly; until then, do the arithmetic inline.)
 
 **8. Requirements by union.** A scope that is the unweighted sum of every stakeholder's wish list.
 → Return to the design brief. A chief designer prunes; a committee accumulates.
