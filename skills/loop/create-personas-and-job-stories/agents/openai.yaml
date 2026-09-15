@@ -1,0 +1,5 @@
+interface:
+  display_name: "Personas And Job Stories"
+  short_description: "One transcript into a cited persona"
+policy:
+  allow_implicit_invocation: false

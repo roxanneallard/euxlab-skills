@@ -1,0 +1,5 @@
+interface:
+  display_name: "Design Review"
+  short_description: "Standards and Evidence, side by side"
+policy:
+  allow_implicit_invocation: false

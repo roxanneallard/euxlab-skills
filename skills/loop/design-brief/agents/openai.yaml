@@ -1,0 +1,5 @@
+interface:
+  display_name: "Design Brief"
+  short_description: "Insights into an agreed design assignment"
+policy:
+  allow_implicit_invocation: false

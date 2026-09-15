@@ -1,0 +1,21 @@
+{
+  "name": "euxlab-skills",
+  "version": "0.1.2",
+  "private": true,
+  "description": "Agent skills for enterprise UX research and design",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roxanneallard/euxlab-skills"
+  },
+  "license": "MIT",
+  "scripts": {
+    "changeset": "changeset",
+    "version": "changeset version && node scripts/sync-plugin-version.mjs",
+    "check-plugin-version": "node scripts/sync-plugin-version.mjs --check",
+    "package-skills": "bash scripts/package-skills.sh"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.7.0",
+    "@changesets/cli": "^2.30.0"
+  }
+}

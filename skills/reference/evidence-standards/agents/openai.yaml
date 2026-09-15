@@ -1,0 +1,3 @@
+interface:
+  display_name: "Evidence Standards"
+  short_description: "Grade evidence from A to D"

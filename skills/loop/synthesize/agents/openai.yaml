@@ -1,0 +1,5 @@
+interface:
+  display_name: "Synthesize"
+  short_description: "Cited, graded insights across transcripts"
+policy:
+  allow_implicit_invocation: false

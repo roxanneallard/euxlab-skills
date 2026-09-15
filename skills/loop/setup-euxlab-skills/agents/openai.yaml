@@ -1,0 +1,5 @@
+interface:
+  display_name: "Setup EUXLab Skills"
+  short_description: "Configure one engagement and its folders"
+policy:
+  allow_implicit_invocation: false

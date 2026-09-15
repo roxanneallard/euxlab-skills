@@ -1,0 +1,33 @@
+{
+  "name": "euxlab-skills",
+  "version": "0.1.2",
+  "description": "Agent skills for enterprise UX research and design. A flow with shared state: stakeholder ask to interview guide, transcripts to personas, insights, design brief, and a two-axis design review.",
+  "author": {
+    "name": "Roxanne Allard",
+    "url": "https://euxlab.com"
+  },
+  "homepage": "https://euxlab.com/system",
+  "repository": "https://github.com/roxanneallard/euxlab-skills",
+  "license": "MIT",
+  "keywords": [
+    "ux",
+    "enterprise-ux",
+    "ux-research",
+    "design",
+    "personas",
+    "jobs-to-be-done",
+    "design-review"
+  ],
+  "skills": [
+    "./skills/loop/setup-euxlab-skills",
+    "./skills/loop/grill-the-ask",
+    "./skills/loop/create-personas-and-job-stories",
+    "./skills/loop/synthesize",
+    "./skills/loop/design-brief",
+    "./skills/loop/design-review",
+    "./skills/reference/grilling",
+    "./skills/reference/evidence-standards",
+    "./skills/reference/enterprise-ux-stance",
+    "./skills/reference/outcome-vocabulary"
+  ]
+}

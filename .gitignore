@@ -1,0 +1,5 @@
+.DS_Store
+node_modules
+
+# Build output. Rebuild with scripts/package-skills.sh
+dist/

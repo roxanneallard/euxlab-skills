@@ -1,0 +1,5 @@
+interface:
+  display_name: "Grill The Ask"
+  short_description: "Sharpen a stakeholder ask into an interview guide"
+policy:
+  allow_implicit_invocation: false

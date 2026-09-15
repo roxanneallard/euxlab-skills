@@ -1,0 +1,17 @@
+{
+  "name": "euxlab",
+  "owner": {
+    "name": "Roxanne Allard",
+    "url": "https://euxlab.com"
+  },
+  "description": "EUXLab Skills for enterprise UX research and design, as an installable Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "euxlab-skills",
+      "source": "./",
+      "description": "Enterprise UX skills: grill the ask, personas and job stories, synthesis, design brief, and a two-axis design review.",
+      "category": "design",
+      "keywords": ["ux", "enterprise-ux", "ux-research", "design"]
+    }
+  ]
+}
