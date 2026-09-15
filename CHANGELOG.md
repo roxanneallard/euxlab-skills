@@ -1,5 +1,30 @@
 # euxlab-skills
 
+## 0.2.0
+
+### Minor Changes
+
+- [`0915028`](https://github.com/roxanneallard/euxlab-skills/commit/0915028e1e93812e6f35daa4fdcfc81b567130e9) Thanks [@roxanneallard](https://github.com/roxanneallard)! - Rename the project from euxpro to euxlab. The plugin is now `euxlab-skills`, the marketplace is `euxlab`, and the setup skill is `setup-euxlab-skills`.
+
+### Patch Changes
+
+- [`0915028`](https://github.com/roxanneallard/euxlab-skills/commit/0915028e1e93812e6f35daa4fdcfc81b567130e9) Thanks [@roxanneallard](https://github.com/roxanneallard)! - Restructure the library around the loop. Every output is the next input.
+
+  - `skills/getting-started/` and `skills/main-flow/` merge into `skills/loop/`. `/setup-euxlab-skills` is step zero. The five loop skills follow in order.
+  - `/create-personas-and-job-stories` no longer writes insights. A persona file holds role, workflows, pain points, needs, and job stories. A pattern you notice in one transcript goes in as a cited pain point.
+  - `/synthesize` is the only skill that writes insights, one file per insight (`research/insights/I01-<slug>.md`), so every insight has one address.
+  - `/design-brief` adds a tracing section: every screen names the insight ID it serves.
+  - `/grill-the-brief` is now `/grill-the-ask`.
+  - `/setup-euxlab-skills` creates all three `research/` leaves: `raw/`, `personas/`, and `insights/`.
+  - `/design-review` walks each screen from its label to the insight, to its source in raw, to the requirement in the brief, and reports a trace table.
+
+- [`0915028`](https://github.com/roxanneallard/euxlab-skills/commit/0915028e1e93812e6f35daa4fdcfc81b567130e9) Thanks [@roxanneallard](https://github.com/roxanneallard)! - Ship the library as its own repo, installable in one step.
+
+  - Claude Code: add this repo as a marketplace and install the `euxlab-skills` plugin (`/plugin marketplace add roxanneallard/euxlab-skills`, then `/plugin install euxlab-skills@euxlab`).
+  - Codex and other agents: `npx skills@latest add roxanneallard/euxlab-skills`.
+  - Every skill gains `agents/openai.yaml` for the Codex skill picker, and every promoted skill gains a docs page under `docs/`.
+  - The Claude desktop and web zips ship as release downloads, built by `scripts/package-skills.sh`.
+
 ## 0.1.2
 
 ### Patch Changes
