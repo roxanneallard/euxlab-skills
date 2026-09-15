@@ -1,5 +1,11 @@
 # euxlab-skills
 
+## 0.3.1
+
+### Patch Changes
+
+- [`6fcefa9`](https://github.com/roxanneallard/euxlab-skills/commit/6fcefa909debfaee5ea47891b1dd54450659ddf1) Thanks [@roxanneallard](https://github.com/roxanneallard)! - The roadmap names its stages Phase 1 to 5 instead of version numbers, so a release number no longer reads as a promise of new skills. `/euxlab-setup` and `/euxlab-enterprise-ux-stance` refer to planned skills by phase.
+
 ## 0.3.0
 
 ### Minor Changes
