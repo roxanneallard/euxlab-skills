@@ -26,7 +26,7 @@ You need a folder you can write to and an agent that reads and writes files in i
 - `docs/agents/engagement.md`: client and domain, design system, consent and retention posture, stakeholder map, and archive target.
 - `GLOSSARY.md`, seeded without terms.
 - `research/raw/`, `research/personas/` and `research/insights/`, with a README in `research/raw/` stating the immutability and consent rules.
-- `docs/drr/` and `.scratch/` for later phases and working files.
+- `.scratch/` for working files.
 - An `## Agent skills` block in `CLAUDE.md` or `AGENTS.md`. If neither exists, setup asks which to create.
 
 Setup does not create `docs/interview-guide.md` or `docs/design-brief.md`. The skill that writes each one is also the proof that its step ran.

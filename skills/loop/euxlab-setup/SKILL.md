@@ -24,7 +24,7 @@ Read what is already there. Do not assume an empty directory.
 
 - `docs/agents/engagement.md` - has this skill run before?
 - `GLOSSARY.md`, `CLAUDE.md`, `AGENTS.md`, `README.md` at the root
-- `research/`, `docs/drr/`, `.scratch/` - which parts of the scaffold exist
+- `research/`, `.scratch/` - which parts of the scaffold exist
 - Any existing transcripts, notes, or decks lying loose in the directory, which tell you the engagement is already underway
 - Whether a design system is detectable from any code or design files present
 
@@ -59,8 +59,6 @@ Who asks for the work, who signs off, and who is measured on the outcome. Names 
 **Section E - Archive target.**
 Where this engagement goes at close. Default to `none`, meaning it stays where it is, because a folder of markdown needs nowhere else to be. Offer a path or a shared drive. This is the only thing that leaves the engagement folder, so the consent posture in section C governs it.
 
-**Section F - Signal tracker.** Only ask if `/triage-signals` is installed (planned for phase 3). Otherwise skip silently.
-
 ### 3. Confirm
 
 Show a draft of `docs/agents/engagement.md` and the folder tree before writing. Let the user edit.
@@ -72,10 +70,9 @@ Create the scaffold:
 ```
 <engagement>/
 ├── docs/
-│   ├── agents/engagement.md   # everything from sections A-F
+│   ├── agents/engagement.md   # everything from sections A-E
 │   ├── interview-guide.md     # /euxlab-grill-the-ask writes this
-│   ├── design-brief.md        # /euxlab-design-brief writes this
-│   └── drr/                   # Design Rationale Records (phase 2 fills this)
+│   └── design-brief.md        # /euxlab-design-brief writes this
 ├── GLOSSARY.md                # /euxlab-grill-the-ask and the persona skill feed this
 ├── research/
 │   ├── raw/                   # immutable, consent-checked; assets included

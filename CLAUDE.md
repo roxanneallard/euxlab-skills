@@ -29,4 +29,4 @@ Add a changeset (`npx changeset`) with every user-visible change. `npm run versi
 
 To (re)link every skill into the local harness skill directories (`~/.claude/skills`, `~/.agents/skills`) for testing, run `scripts/link-skills.sh`. Each entry is a symlink into this repo, so edits show up in the next session.
 
-The design rationale for the whole suite, including the planned 28 skills, is [.agents/concept.md](./.agents/concept.md).
+The design rationale for the whole suite is [.agents/concept.md](./.agents/concept.md).

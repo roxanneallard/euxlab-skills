@@ -8,4 +8,4 @@ The plugin won't give you these. Install one directly:
 npx skills@latest add roxanneallard/euxlab-skills --skill=<name>
 ```
 
-This bucket is empty. The next skills on the roadmap land here first.
+This bucket is empty.

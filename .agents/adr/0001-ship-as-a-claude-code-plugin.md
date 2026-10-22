@@ -16,7 +16,7 @@ Skills live in bucket folders. `loop/` and `reference/` are promoted. `in-progre
 ## Deferred
 
 - **A native Codex plugin.** Its manifest takes `skills` as a single path, which cannot name three bucket folders. skills.sh already covers Codex.
-- **Claude Code's official marketplace.** Submitting the plugin there would shorten the install to `claude plugins install euxlab-skills`. Worth doing once the repo is public and the v0.1 exit criterion has been met on a real engagement.
+- **Claude Code's official marketplace.** Anthropic curates it, so there is no application. The plugin is submitted to the community marketplace instead.
 
 ## Invariants this creates
 

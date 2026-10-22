@@ -2,4 +2,4 @@
 'euxlab-skills': patch
 ---
 
-The roadmap names its stages Phase 1 to 5 instead of version numbers, so a release number no longer reads as a promise of new skills. `/euxlab-setup` and `/euxlab-enterprise-ux-stance` refer to planned skills by phase.
+The README drops the roadmap and the planned skill count. It describes the ten skills that ship. `/euxlab-setup` no longer asks about a signal tracker or creates `docs/drr/`, and `/euxlab-enterprise-ux-stance` no longer points to an unreleased skill.

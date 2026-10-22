@@ -4,7 +4,7 @@ Agent skills for enterprise UX research and design. A loop with shared state, no
 
 **Every output is the next input.** Every skill reads a file, does one thing, and writes the next file. That file is the contract with the next step. The skills work in Claude Code, Codex, and any agent that reads the Agent Skills format.
 
-**Status: v0.3.0, phase 1 of 5.** Ten skills. The loop runs from a vague stakeholder request to a reviewed design without dropping into freeform chat. Every skill is self-contained: no private dependency, nothing to install but this repo.
+**Status: v0.3.0.** Ten skills. The loop runs from a vague stakeholder request to a reviewed design without dropping into freeform chat. Every skill is self-contained: no private dependency, nothing to install but this repo.
 
 The landing page lives at [euxlab.com/system](https://euxlab.com/system).
 
@@ -182,20 +182,6 @@ The vocabulary layer the loop skills load instead of restating.
 - **[euxlab-evidence-standards](./skills/reference/euxlab-evidence-standards/SKILL.md)**: The four-grade strength scale, downgrade triggers, and the research anti-patterns.
 - **[euxlab-enterprise-ux-stance](./skills/reference/euxlab-enterprise-ux-stance/SKILL.md)**: Ten enterprise design smells and their fixes.
 - **[euxlab-outcome-vocabulary](./skills/reference/euxlab-outcome-vocabulary/SKILL.md)**: Job story format, ODI outcome format, job map, opportunity algorithm.
-
-## Roadmap
-
-Five phases, 28 skills. The design rationale for the whole suite is in [.agents/concept.md](./.agents/concept.md).
-
-| Phase | Theme | Ships | Total |
-|---|---|---|---|
-| **Phase 1** | MVP: the loop that compounds | 10 | 10 |
-| Phase 2 | The loop closes | 6 | 16 |
-| Phase 3 | The engagement sustains itself | 6 | 22 |
-| Phase 4 | Fog and audience | 4 | 26 |
-| Phase 5 | The library, hardened | 2 + evals | 28 |
-
-**Phase 1 exit criterion:** one real engagement runs request → interview guide → transcripts → personas → insights → design brief → reviewed design without improvisation at any step, and every screen traces to a cited insight. Until that has happened once, the phase is written, not done.
 
 ## Credits
 
