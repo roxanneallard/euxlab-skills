@@ -1,5 +1,11 @@
 # euxlab-skills
 
+## 0.3.1
+
+### Patch Changes
+
+- [`6fcefa9`](https://github.com/roxanneallard/euxlab-skills/commit/6fcefa909debfaee5ea47891b1dd54450659ddf1) Thanks [@roxanneallard](https://github.com/roxanneallard)! - The README drops the roadmap and the planned skill count. It describes the ten skills that ship. `/euxlab-setup` no longer asks about a signal tracker or creates `docs/drr/`, and `/euxlab-enterprise-ux-stance` no longer points to an unreleased skill.
+
 ## 0.3.0
 
 ### Minor Changes
