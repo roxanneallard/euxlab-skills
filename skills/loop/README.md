@@ -14,3 +14,5 @@ Reachable only when you type them (Claude Code: `disable-model-invocation: true`
 4. **[euxlab-design-brief](./euxlab-design-brief/SKILL.md)**: `research/insights/` in, `docs/design-brief.md` out. The design assignment: scope, requirements, and the insights the design has to serve.
    - _Handwork: design in Figma. Screens and a prototype, each screen naming the insight it serves._
 5. **[euxlab-design-review](./euxlab-design-review/SKILL.md)**: The design in, two reports out. Standards: heuristics, WCAG, design system. Evidence: which insight each screen serves, and where that is written.
+
+Skills that run outside the loop live in [standalone/](../standalone/README.md).

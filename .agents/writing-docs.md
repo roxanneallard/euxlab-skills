@@ -1,6 +1,6 @@
 # Writing docs pages
 
-Every promoted skill has a human-facing **docs page** at `docs/<bucket>/<skill-name>.md`. The docs tree mirrors the promoted buckets under `skills/`: `loop/` and `reference/`. The page is not the skill and not a copy of `SKILL.md`. Skills in `in-progress/` and `deprecated/` get no page.
+Every promoted skill has a human-facing **docs page** at `docs/<bucket>/<skill-name>.md`. The docs tree mirrors the promoted buckets under `skills/`: `loop/`, `standalone/`, and `reference/`. The page is not the skill and not a copy of `SKILL.md`. Skills in `in-progress/` and `deprecated/` get no page.
 
 Most of these skills are user-invoked. The agent will never fire them for you, so you have to remember they exist and when to reach for them. A docs page relieves that load: it orients one reader around one skill so they know when to reach for it and where it sits in the flow.
 

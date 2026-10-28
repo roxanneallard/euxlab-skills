@@ -1,13 +1,14 @@
 Skills are organized into bucket folders under `skills/`, grouped by when you reach for them:
 
 - `loop/`: the loop, step zero (setup) then request to reviewed design, every output the next input
-- `reference/`: vocabulary and rubrics the loop skills load instead of restating
+- `standalone/`: skills outside the loop, run at any point, reading the engagement folder and writing a file no loop step reads back
+- `reference/`: vocabulary and rubrics the loop and standalone skills load instead of restating
 - `in-progress/`: beta, public on purpose, feedback wanted, not shipped in the plugin
 - `deprecated/`: no longer used
 
-The loop is the product. Every skill in `loop/` names the file it reads and the file it writes, and the two handwork steps (interviewing, designing) sit between them. The loop order in `README.md`, `skills/loop/README.md`, and the site must match.
+The loop is the product. Every skill in `loop/` names the file it reads and the file it writes, and the two handwork steps (interviewing, designing) sit between them. The loop order in `README.md`, `skills/loop/README.md`, and the site must match. A skill whose output no loop step reads goes in `standalone/`, never in `loop/`.
 
-Every skill in `loop/` or `reference/` (the **promoted** buckets) must have a reference in the top-level `README.md` and an entry in `.claude-plugin/plugin.json`'s `skills` array (the Claude Code plugin ships exactly the promoted set). Skills in `in-progress/` and `deprecated/` must not appear in either.
+Every skill in `loop/`, `standalone/`, or `reference/` (the **promoted** buckets) must have a reference in the top-level `README.md` and an entry in `.claude-plugin/plugin.json`'s `skills` array (the Claude Code plugin ships exactly the promoted set). Skills in `in-progress/` and `deprecated/` must not appear in either.
 
 Install commands are copied verbatim from [.agents/install-block.md](./.agents/install-block.md). `.claude-plugin/marketplace.json` makes the repo its own single-plugin marketplace. Run `claude plugin validate . --strict` after touching either manifest. Why a Claude plugin plus skills.sh lives in [.agents/adr/0001-ship-as-a-claude-code-plugin.md](./.agents/adr/0001-ship-as-a-claude-code-plugin.md).
 

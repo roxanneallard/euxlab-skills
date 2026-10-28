@@ -25,6 +25,7 @@
     "./skills/loop/euxlab-synthesize",
     "./skills/loop/euxlab-design-brief",
     "./skills/loop/euxlab-design-review",
+    "./skills/standalone/euxlab-write-okrs",
     "./skills/reference/euxlab-grilling",
     "./skills/reference/euxlab-evidence-standards",
     "./skills/reference/euxlab-enterprise-ux-stance",

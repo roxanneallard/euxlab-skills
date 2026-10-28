@@ -5,7 +5,7 @@ description: JTBD and ODI language - job story format, desired outcome statement
 
 # Outcome vocabulary
 
-The shared JTBD/ODI grammar. `/euxlab-create-personas-and-job-stories` and `/euxlab-design-brief` both consume it, which is why it lives here rather than inside either one.
+The shared JTBD/ODI grammar. `/euxlab-create-personas-and-job-stories`, `/euxlab-design-brief`, and `/euxlab-write-okrs` all consume it, which is why it lives here rather than inside any one of them.
 
 ## The three statement types, and when each is used
 

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Write OKRs"
+  short_description: "Engagement context into outcome OKRs"
+policy:
+  allow_implicit_invocation: false

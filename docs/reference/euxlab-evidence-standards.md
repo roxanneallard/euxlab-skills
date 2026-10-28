@@ -6,7 +6,7 @@ A weak grade means untested, not wrong. A weak claim earns research, never desig
 
 ## When to reach for it
 
-Type `/euxlab-evidence-standards`, or the agent reaches for it on its own when a task fits. [euxlab-grill-the-ask](https://euxlab.com/system/skills/euxlab-grill-the-ask), [euxlab-create-personas-and-job-stories](https://euxlab.com/system/skills/euxlab-create-personas-and-job-stories), [euxlab-synthesize](https://euxlab.com/system/skills/euxlab-synthesize), [euxlab-design-brief](https://euxlab.com/system/skills/euxlab-design-brief) and [euxlab-design-review](https://euxlab.com/system/skills/euxlab-design-review) all load it, so inside the loop you rarely type it yourself.
+Type `/euxlab-evidence-standards`, or the agent reaches for it on its own when a task fits. [euxlab-grill-the-ask](https://euxlab.com/system/skills/euxlab-grill-the-ask), [euxlab-create-personas-and-job-stories](https://euxlab.com/system/skills/euxlab-create-personas-and-job-stories), [euxlab-synthesize](https://euxlab.com/system/skills/euxlab-synthesize), [euxlab-design-brief](https://euxlab.com/system/skills/euxlab-design-brief), [euxlab-design-review](https://euxlab.com/system/skills/euxlab-design-review) and [euxlab-write-okrs](https://euxlab.com/system/skills/euxlab-write-okrs) all load it, so inside the loop you rarely type it yourself.
 
 Reach for this when you grade an assumption, judge whether a claim holds, plan a research method, or check whether a design decision has evidence behind it.
 

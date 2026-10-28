@@ -15,7 +15,7 @@ find "$OUT" -name '*.zip' -delete
 STAGE=$(mktemp -d)
 trap 'rm -rf "$STAGE"' EXIT
 
-for dir in skills/loop/*/ skills/reference/*/; do
+for dir in skills/loop/*/ skills/standalone/*/ skills/reference/*/; do
   name=$(basename "${dir%/}")
   mkdir -p "$STAGE/$name"
   cp -R "${dir}." "$STAGE/$name/"

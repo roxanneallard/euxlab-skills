@@ -72,7 +72,8 @@ Create the scaffold:
 ├── docs/
 │   ├── agents/engagement.md   # everything from sections A-E
 │   ├── interview-guide.md     # /euxlab-grill-the-ask writes this
-│   └── design-brief.md        # /euxlab-design-brief writes this
+│   ├── design-brief.md        # /euxlab-design-brief writes this
+│   └── okrs.md                # /euxlab-write-okrs writes this
 ├── GLOSSARY.md                # /euxlab-grill-the-ask and the persona skill feed this
 ├── research/
 │   ├── raw/                   # immutable, consent-checked; assets included
@@ -82,7 +83,7 @@ Create the scaffold:
 ```
 
 Create `docs/` and the three `research/` leaves. Do not create empty
-`interview-guide.md` or `design-brief.md` files: the skill that writes one is
+`interview-guide.md`, `design-brief.md`, or `okrs.md` files: the skill that writes one is
 also what proves the step ran.
 
 Seed `docs/agents/engagement.md` from [engagement-template.md](./engagement-template.md) and `GLOSSARY.md` from [glossary-template.md](./glossary-template.md).

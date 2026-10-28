@@ -1,6 +1,6 @@
 # Reference
 
-The vocabulary layer. The loop skills load these instead of restating them, so each rule lives in one place.
+The vocabulary layer. The loop and standalone skills load these instead of restating them, so each rule lives in one place.
 
 ## Model-invoked
 

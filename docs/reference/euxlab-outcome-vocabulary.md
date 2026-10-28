@@ -6,7 +6,7 @@ Every statement written in this grammar is solution-free. The test: two competin
 
 ## When to reach for it
 
-Type `/euxlab-outcome-vocabulary`, or the agent reaches for it on its own when a task fits. [euxlab-create-personas-and-job-stories](https://euxlab.com/system/skills/euxlab-create-personas-and-job-stories) and [euxlab-design-brief](https://euxlab.com/system/skills/euxlab-design-brief) both load it, so inside the loop you rarely type it yourself.
+Type `/euxlab-outcome-vocabulary`, or the agent reaches for it on its own when a task fits. [euxlab-create-personas-and-job-stories](https://euxlab.com/system/skills/euxlab-create-personas-and-job-stories), [euxlab-design-brief](https://euxlab.com/system/skills/euxlab-design-brief) and [euxlab-write-okrs](https://euxlab.com/system/skills/euxlab-write-okrs) all load it, so inside the loop you rarely type it yourself.
 
 Reach for this when you write job stories or outcome statements, state what a design requirement has to make observable, or check whether a statement is solution-free.
 

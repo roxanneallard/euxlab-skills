@@ -6,7 +6,7 @@ Each round asks the whole frontier at once, and every question arrives with the 
 
 ## When to reach for it
 
-Type `/euxlab-grilling`, or the agent reaches for it on its own when a task fits. [euxlab-grill-the-ask](https://euxlab.com/system/skills/euxlab-grill-the-ask) loads it for its interview, so inside the loop you rarely type it yourself.
+Type `/euxlab-grilling`, or the agent reaches for it on its own when a task fits. [euxlab-grill-the-ask](https://euxlab.com/system/skills/euxlab-grill-the-ask) and [euxlab-write-okrs](https://euxlab.com/system/skills/euxlab-write-okrs) load it for their interviews, so inside the loop you rarely type it yourself.
 
 Reach for this when you want a plan, a decision, or an idea stress-tested, or when you use a phrase like "grill me".
 

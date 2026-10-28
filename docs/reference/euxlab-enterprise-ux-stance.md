@@ -6,7 +6,7 @@ A smell is a labeled judgment call, never a rule violation. The baseline applies
 
 ## When to reach for it
 
-Type `/euxlab-enterprise-ux-stance`, or the agent reaches for it on its own when a task fits. [euxlab-design-review](https://euxlab.com/system/skills/euxlab-design-review) loads it for the Standards review. [euxlab-grill-the-ask](https://euxlab.com/system/skills/euxlab-grill-the-ask) and [euxlab-design-brief](https://euxlab.com/system/skills/euxlab-design-brief) cite single smells from it. Inside the loop you rarely type it yourself.
+Type `/euxlab-enterprise-ux-stance`, or the agent reaches for it on its own when a task fits. [euxlab-design-review](https://euxlab.com/system/skills/euxlab-design-review) loads it for the Standards review. [euxlab-grill-the-ask](https://euxlab.com/system/skills/euxlab-grill-the-ask), [euxlab-design-brief](https://euxlab.com/system/skills/euxlab-design-brief) and [euxlab-write-okrs](https://euxlab.com/system/skills/euxlab-write-okrs) cite single smells from it. Inside the loop you rarely type it yourself.
 
 Reach for this when you review an enterprise design artifact, argue a design decision, or check whether a recommendation fits an enterprise context instead of a consumer one.
 

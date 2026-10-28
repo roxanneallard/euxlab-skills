@@ -4,7 +4,7 @@ Agent skills for enterprise UX research and design. A loop with shared state, no
 
 **Every output is the next input.** Every skill reads a file, does one thing, and writes the next file. That file is the contract with the next step. The skills work in Claude Code, Codex, and any agent that reads the Agent Skills format.
 
-**Status: v0.3.0.** Ten skills. The loop runs from a vague stakeholder request to a reviewed design without dropping into freeform chat. Every skill is self-contained: no private dependency, nothing to install but this repo.
+**Status: v0.3.0.** Eleven skills. The loop runs from a vague stakeholder request to a reviewed design without dropping into freeform chat. Every skill is self-contained: no private dependency, nothing to install but this repo.
 
 The landing page lives at [euxlab.com/system](https://euxlab.com/system).
 
@@ -62,9 +62,9 @@ It writes the skills into your project as ordinary files you own and edit. Nothi
 
 Those apps take uploaded zips. Download them from the [latest release](https://github.com/roxanneallard/euxlab-skills/releases/latest), or build them with `scripts/package-skills.sh`. Upload each one under **Settings > Capabilities > Skills > Upload skill**.
 
-Upload the reference skills first, because the loop skills load them: `euxlab-grilling`, `euxlab-evidence-standards`, `euxlab-enterprise-ux-stance`, `euxlab-outcome-vocabulary`. Then `euxlab-setup` and the five loop skills.
+Upload the reference skills first, because the loop skills load them: `euxlab-grilling`, `euxlab-evidence-standards`, `euxlab-enterprise-ux-stance`, `euxlab-outcome-vocabulary`. Then `euxlab-setup`, the five loop skills, and the standalone skills.
 
-Those apps have no slash commands, so the zips drop `disable-model-invocation`. Invoke a skill by naming it instead: "grill this ask", "synthesize these transcripts", "run a design review on this". Six of the ten skills read and write files, so give Claude file access (a Filesystem MCP server or a project) or they leave no state on disk.
+Those apps have no slash commands, so the zips drop `disable-model-invocation`. Invoke a skill by naming it instead: "grill this ask", "synthesize these transcripts", "run a design review on this". Seven of the eleven skills read and write files, so give Claude file access (a Filesystem MCP server or a project) or they leave no state on disk.
 
 </details>
 
@@ -115,6 +115,8 @@ two reports                       Standards: heuristics, WCAG, design system.
                                   Evidence: which insight each screen serves, and where that is written
 ```
 
+**Standalone** skills sit outside the loop. They read whatever the folder holds and write a file no loop step reads back, so you run them at any point. `/euxlab-write-okrs` turns the folder into OKRs for a period and writes `docs/okrs.md`.
+
 Three kinds of step. A **skill** (`/name`) does the work. A **file** is what the skill writes, and what the next step reads. **Handwork** is what you do yourself: interviewing is a human talking to a human, and designing is the part you are good at. The skills carry the state between them.
 
 ## What you need
@@ -125,7 +127,7 @@ Everything this suite shares between steps is plain markdown in an ordinary dire
 
 ```
 engagement/
-├── docs/            engagement.md, interview-guide.md, design-brief.md
+├── docs/            engagement.md, interview-guide.md, design-brief.md, okrs.md
 ├── GLOSSARY.md
 └── research/        raw/, personas/, insights/
 ```
@@ -148,6 +150,7 @@ Every step reads and writes the same folders. This is what makes it a loop rathe
 | `research/insights/` | `/euxlab-synthesize` | `/euxlab-design-brief`, `/euxlab-design-review` | one file per insight, ID'd, graded, cited to raw |
 | `docs/design-brief.md` | `/euxlab-design-brief` | designing, `/euxlab-design-review` | requirements, each serving named insight IDs |
 | the design | designing | `/euxlab-design-review` | every screen names the insight ID it serves |
+| `docs/okrs.md` | `/euxlab-write-okrs` | the team, at period end | outcome key results, each with a graded baseline, a target, and a source |
 
 ## Two rules that hold across the suite
 
@@ -172,9 +175,17 @@ Step zero, then the loop in order.
 - **[euxlab-design-brief](./skills/loop/euxlab-design-brief/SKILL.md)**: Insights into the design assignment. Scope, requirements, and the insights each one serves, agreed before design.
 - **[euxlab-design-review](./skills/loop/euxlab-design-review/SKILL.md)**: Two parallel reviews, Standards and Evidence, side by side. Evidence walks every screen to its insight and its source.
 
+### Standalone
+
+Outside the loop. Run at any point, from whatever the engagement folder holds.
+
+**User-invoked**
+
+- **[euxlab-write-okrs](./skills/standalone/euxlab-write-okrs/SKILL.md)**: The engagement folder into two or three outcome OKRs. Extracts what the project knows, grills the gaps, every key result with a baseline, a target, and a source.
+
 ### Reference
 
-The vocabulary layer the loop skills load instead of restating.
+The vocabulary layer the loop and standalone skills load instead of restating.
 
 **Model-invoked**
 

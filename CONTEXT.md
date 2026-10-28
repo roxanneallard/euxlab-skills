@@ -77,8 +77,19 @@ The set of open decisions whose prerequisites are settled. `/euxlab-grilling` as
 The sequence the suite runs: request, `/euxlab-grill-the-ask`, interviewing, `/euxlab-create-personas-and-job-stories`, `/euxlab-synthesize`, `/euxlab-design-brief`, designing, `/euxlab-design-review`. Every output is the next input. `/euxlab-setup` is step zero and runs once, before the first loop.
 _Avoid_: pipeline, spine, main flow
 
+**Standalone skill**:
+A skill outside the **Loop**. It reads whatever the **Engagement folder** holds and writes a file no loop step reads back, so it runs at any point. Lives in `skills/standalone/`.
+_Avoid_: side skill, utility, alongside the loop
+
 **Handwork**:
 A loop step that is deliberately not a skill: interviewing stakeholders and users, and designing in Figma. The skills carry the state between them.
+
+**OKRs**:
+`docs/okrs.md`. Two or three objectives, each naming an outcome, with key results that carry a graded baseline, a target, and a source. Written by `/euxlab-write-okrs`, a **Standalone skill**.
+_Avoid_: goals, targets (both too vague to score)
+
+**Trap**:
+One of the OKR failure modes `/euxlab-write-okrs` hunts, such as an invented baseline or a lone speed metric. Distinct from a **Smell**, which judges a design.
 
 **Screen label**:
 The insight ID a screen names in its frame name or an annotation ("Case overview (I02)"). The first link `/euxlab-design-review` checks in the chain screen, insight, source, requirement.
@@ -96,4 +107,5 @@ The insight ID a screen names in its frame name or an annotation ("Case overview
 
 - "brief" meant both the incoming request and the design assignment. Resolved: the incoming request is the **Stakeholder ask**, the assignment is the **Design brief**.
 - "Hill" (Who/What/Wow) was the checkable bar before 0.1.2. Resolved: replaced by the **Requirement** with its **Observable**, inside the **Design brief**.
+- "smell" was proposed for the OKR failure modes. Resolved: those are **Traps**. A **Smell** judges a design.
 - "vault" is not a domain term. The suite needs an **Engagement folder**, nothing more.

@@ -29,7 +29,7 @@ You need a folder you can write to and an agent that reads and writes files in i
 - `.scratch/` for working files.
 - An `## Agent skills` block in `CLAUDE.md` or `AGENTS.md`. If neither exists, setup asks which to create.
 
-Setup does not create `docs/interview-guide.md` or `docs/design-brief.md`. The skill that writes each one is also the proof that its step ran.
+Setup does not create `docs/interview-guide.md`, `docs/design-brief.md`, or `docs/okrs.md`. The skill that writes each one is also the proof that its step ran.
 
 ## The consent posture
 
