@@ -1,5 +1,15 @@
 # euxlab-skills
 
+## 0.4.0
+
+### Minor Changes
+
+- [`aecc500`](https://github.com/roxanneallard/euxlab-skills/commit/aecc50007eca1250dc91d3a5b7359aad45fafeed) - Add a `standalone/` bucket for skills outside the loop, and its first skill, `/euxlab-write-okrs`. It reads whatever the engagement folder holds, grills the gaps, and writes `docs/okrs.md`: two or three objectives with outcome key results, each with a graded baseline, a target, and a source. `/euxlab-setup` lists `okrs.md` in the scaffold.
+
+### Patch Changes
+
+- [`6fcefa9`](https://github.com/roxanneallard/euxlab-skills/commit/6fcefa909debfaee5ea47891b1dd54450659ddf1) Thanks [@roxanneallard](https://github.com/roxanneallard)! - The README drops the roadmap and the planned skill count. It describes the ten skills that ship. `/euxlab-setup` no longer asks about a signal tracker or creates `docs/drr/`, and `/euxlab-enterprise-ux-stance` no longer points to an unreleased skill.
+
 ## 0.3.0
 
 ### Minor Changes
