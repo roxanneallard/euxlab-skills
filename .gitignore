@@ -3,3 +3,6 @@ node_modules
 
 # Build output. Rebuild with scripts/package-skills.sh
 dist/
+
+# agent tooling
+.agents/
