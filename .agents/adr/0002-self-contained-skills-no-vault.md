@@ -1,5 +1,7 @@
 # Every skill is self-contained; no vault dependency
 
+> Superseded by [0003](0003-skills-read-an-optional-vault.md) on 2026-11-10.
+
 The first drafts of this suite pointed reference skills at a personal knowledge base: `/euxlab-evidence-standards` and `/euxlab-enterprise-ux-stance` disclosed wiki pages instead of carrying their own content, and one skill told the agent to "search the vault". That made the library unusable for anyone without the same vault, and it taught new users they had to build one first.
 
 ## Decision

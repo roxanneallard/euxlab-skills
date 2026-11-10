@@ -93,6 +93,9 @@ One of the OKR failure modes `/euxlab-write-okrs` hunts, such as an invented bas
 
 **Screen label**:
 The insight ID a screen names in its frame name or an annotation ("Case overview (I02)"). The first link `/euxlab-design-review` checks in the chain screen, insight, source, requirement.
+**Decision record**:
+A choice between named alternatives, made by a named person on a date, that changes what the team does next. Covers scope, method, design, and sign-offs. ID `D01`. A choice with no alternatives is not a decision.
+_Avoid_: DRR, design rationale record (retired), action item
 
 ## Relationships
 
